@@ -13,7 +13,8 @@
 ![yii主页](./configPictures/yii.png)
 ##### 二 Yii环境基本配置
 1. 配置数据库连接，修改config/db.php文件中的`dbname=yii2basic`，在xampp的phpmyadmin模块新建`yii2basic`数据库；
-2. 激活Gii，在web.php文件中查看，确保存在如下片段：
+2. 激活Gii  
+a. 在web.php文件中查看，确保存在如下片段：
 ```javascript
 $config['bootstrap'][] = 'gii';
 $config['modules']['gii'] = [
@@ -22,7 +23,7 @@ $config['modules']['gii'] = [
     'allowedIPs' => ['127.0.0.1', '::1'],
 ];
 ```
-检查应用入口脚本web/index.php，将YII_ENV设置为`dev`;  
+b. 检查应用入口脚本web/index.php，将YII_ENV设置为`dev`;  
 3. 开发模式下，Gii模块已激活，可访问`http://localhost/mvc/basic/web/index.php?r=gii`进入Gii主页：
 ![gii主页](./configPictures/gii.png)
 4. 在`yii2basic`数据库中新建图书基本字段表：
@@ -31,7 +32,8 @@ $config['modules']['gii'] = [
 ![model](./configPictures/model-generator.png)  
 
 ![curd](./configPictures/curd-generator.png)
-6. 至此，各环境基本配置完毕，可对controllers、models、views文件做进一步了解；   
+6. 至此，各环境基本配置完毕，可通过访问`http://localhost/mvc/basic/web/index.php?r=books`进行增删改查操作，具体业务逻辑见controllers、models、views文件；  
+ ![books](./configPictures/books.png)  
 7. 对应的模版目录:   
 model: `/mvc/basic/vendor/yiisoft/yii2-gii/src/generators/model/default`;   
 curd: `mvc/basic/vendor/yiisoft/yii2-gii/src/generators/crud/default`;
