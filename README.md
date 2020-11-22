@@ -1,7 +1,7 @@
 # books-manager-php
 基于PHP+MySql实现的简单的图书管理系统
 ##### 一 XAMPP环境安装步骤
-1. 配置xampp集成环境https://www.apachefriends.org/download.html，安装完成后，开启MySql和web服务，访问localhost即可打开页面；
+1. 配置xampp集成环境[下载地址](https://www.apachefriends.org/download.html)，安装完成后，开启MySql和web服务，访问localhost即可打开页面；
 ![xampp服务启动页面](./configPictures/xampp.png)
 2. 在集成环境中点击“Open Application Folder”找到对应的xamppfiles，htdos即为web静态资源根目录；
 3. 下载yii2 basic，在htdos目录下新建mvc文件夹，将yii2解压至该目录；
